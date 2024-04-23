@@ -1,3 +1,9 @@
+tippy("#backToTop", {
+	content: "Back To Top",
+});
+tippy("#changeTheme", {
+	content: "Change Theme",
+})
 let theme = document.querySelector(".slider");
 let body = document.querySelector("body");
 var darkMode = false;

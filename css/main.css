@@ -105,6 +105,7 @@ body.dark.error header nav {
   background-color: #002354;
 }
 body.error header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -132,8 +133,8 @@ header {
   height: 80px;
   position: fixed;
   z-index: 9999;
-  background-color: var(--white);
-  transition: background-color 0.3s, opacity ease 1.2s, transform ease 1.2s;
+  background: var(--white);
+  transition: background ease 0.3s, opacity ease 1.2s, transform ease 1.2s;
 }
 @media (max-width: 1320px) {
   header {
@@ -569,7 +570,8 @@ section.find .container .text a {
   border-radius: 4px;
   font: 400 16px "DM Sans";
   display: inline-block;
-  margin-block-start: 32px;
+  -webkit-margin-before: 32px;
+          margin-block-start: 32px;
 }
 section.find .container .img {
   width: min(100%, 595px);
@@ -582,7 +584,8 @@ section.find .container .img {
 }
 @media (max-width: 1200px) {
   section.find .container .img {
-    margin-block-start: 30px;
+    -webkit-margin-before: 30px;
+            margin-block-start: 30px;
   }
 }
 @media (max-width: 560px) {
@@ -664,7 +667,8 @@ section.cards .container:nth-of-type(2) .card p {
 section.all-cources {
   padding-block: 60px;
   background-color: #ECF4FF;
-  margin-block-start: 128px;
+  -webkit-margin-before: 128px;
+          margin-block-start: 128px;
   transition: background-color 0.3s;
 }
 section.all-cources a[href="/cources"] {
@@ -1208,6 +1212,12 @@ section.form .container .text-center form input::-moz-placeholder {
   -moz-transition: color 0.3s;
   transition: color 0.3s;
 }
+section.form .container .text-center form input:-ms-input-placeholder {
+  font-size: 14px;
+  color: var(--secondary);
+  -ms-transition: color 0.3s;
+  transition: color 0.3s;
+}
 section.form .container .text-center form input::placeholder {
   font-size: 14px;
   color: var(--secondary);
@@ -1469,7 +1479,8 @@ footer .container ul li a:hover {
 }
 .box .ghost .symbol:nth-child(1) {
   opacity: 0.2;
-  animation: shine 4s ease-in-out 3s infinite;
+  -webkit-animation: shine 4s ease-in-out 3s infinite;
+          animation: shine 4s ease-in-out 3s infinite;
 }
 .box .ghost .symbol:nth-child(1):before, .box .ghost .symbol:nth-child(1):after {
   content: "";
@@ -1496,11 +1507,13 @@ footer .container ul li a:hover {
   border: 4px solid;
   border-radius: 50%;
   opacity: 0.2;
-  animation: shine 4s ease-in-out 1.3s infinite;
+  -webkit-animation: shine 4s ease-in-out 1.3s infinite;
+          animation: shine 4s ease-in-out 1.3s infinite;
 }
 .box .ghost .symbol:nth-child(3) {
   opacity: 0.2;
-  animation: shine 3s ease-in-out 0.5s infinite;
+  -webkit-animation: shine 3s ease-in-out 0.5s infinite;
+          animation: shine 3s ease-in-out 0.5s infinite;
 }
 .box .ghost .symbol:nth-child(3):before, .box .ghost .symbol:nth-child(3):after {
   content: "";
@@ -1520,7 +1533,8 @@ footer .container ul li a:hover {
 }
 .box .ghost .symbol:nth-child(4) {
   opacity: 0.2;
-  animation: shine 6s ease-in-out 1.6s infinite;
+  -webkit-animation: shine 6s ease-in-out 1.6s infinite;
+          animation: shine 6s ease-in-out 1.6s infinite;
 }
 .box .ghost .symbol:nth-child(4):before, .box .ghost .symbol:nth-child(4):after {
   content: "";
@@ -1547,11 +1561,13 @@ footer .container ul li a:hover {
   border: 3px solid;
   border-radius: 50%;
   opacity: 0.2;
-  animation: shine 1.7s ease-in-out 7s infinite;
+  -webkit-animation: shine 1.7s ease-in-out 7s infinite;
+          animation: shine 1.7s ease-in-out 7s infinite;
 }
 .box .ghost .symbol:nth-child(6) {
   opacity: 0.2;
-  animation: shine 2s ease-in-out 6s infinite;
+  -webkit-animation: shine 2s ease-in-out 6s infinite;
+          animation: shine 2s ease-in-out 6s infinite;
 }
 .box .ghost .symbol:nth-child(6):before, .box .ghost .symbol:nth-child(6):after {
   content: "";
@@ -1576,7 +1592,8 @@ footer .container ul li a:hover {
   border-radius: 100px 100px 0 0;
   position: relative;
   margin: 0 auto;
-  animation: upndown 3s ease-in-out infinite;
+  -webkit-animation: upndown 3s ease-in-out infinite;
+          animation: upndown 3s ease-in-out infinite;
 }
 .box .ghost .ghost-container .eyes {
   position: absolute;
@@ -1629,7 +1646,8 @@ footer .container ul li a:hover {
   box-shadow: 0 50px 15px 5px #086CF9;
   border-radius: 50%;
   margin: 0 auto;
-  animation: smallnbig 3s ease-in-out infinite;
+  -webkit-animation: smallnbig 3s ease-in-out infinite;
+          animation: smallnbig 3s ease-in-out infinite;
 }
 .box .description {
   position: absolute;
@@ -1694,6 +1712,18 @@ footer .container ul li a:hover {
   transform: translateX(250px) rotate(45deg);
 }
 
+@-webkit-keyframes upndown {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 @keyframes upndown {
   0% {
     transform: translateY(5px);
@@ -1705,6 +1735,17 @@ footer .container ul li a:hover {
     transform: translateY(5px);
   }
 }
+@-webkit-keyframes smallnbig {
+  0% {
+    width: 90px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 90px;
+  }
+}
 @keyframes smallnbig {
   0% {
     width: 90px;
@@ -1714,6 +1755,20 @@ footer .container ul li a:hover {
   }
   100% {
     width: 90px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
 @keyframes shine {

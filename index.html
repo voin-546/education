@@ -6,11 +6,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-256.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-256.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <title>Education</title>
 </head>
 <body>
-    <a href="#" class="back-to-top">
+    <a href="#" class="back-to-top" id="backToTop">
         <lord-icon src="https://cdn.lordicon.com/ternnbni.json" trigger="hover" state="hover-arrow-up-2" colors="primary:#086cf9;">
     </lord-icon>
     </a>
@@ -29,7 +30,7 @@
                     <li><a href="/login/">Sign in</a></li>
                     <li><a href="/login/" class="btn">Sign Up</a></li>
                     <li>
-                        <a>
+                        <a id="changeTheme">
                             <div class="slider">
                                 <div class="circle"></div>
                             </div>
@@ -947,6 +948,8 @@
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/script.js"></script>
