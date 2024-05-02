@@ -1,74 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/main.css">
-	<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/leto-most-searched-mix-3/64/__login_sign_in_account-256.png">
-	<link rel="apple-touch-icon" href="https://cdn2.iconfinder.com/data/icons/leto-most-searched-mix-3/64/__login_sign_in_account-256.png">
-	<title>Login to Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up | sL Code Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 </head>
+
 <body class="login">
-	<div class="section">
-		<div class="container">
-			<div class="row full-height justify-content-center">
-				<div class="col-12 text-center py-5">
-					<div class="section pb-5 pt-5 pt-sm-2 text-center">
-						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-			          	<label for="reg-log"></label>
-						<div class="card-3d-wrap mx-auto">
-							<div class="card-3d-wrapper">
-								<div class="card-front">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Log In</h4>
-											<div class="form-group">
-												<input type="email" class="form-style" placeholder="Email">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password">
-												<i class="input-icon uil uil-lock-alt"></i>
-											</div>
-											<button class="btn mt-4">Login</button>
-                      						<p class="mb-0 mt-4 text-center"><a href="/reset_password" class="link">Forgot password?</a></p>
-				      					</div>
-			      					</div>
-			      				</div>
-								<div class="card-back">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-3 pb-3">Sign Up</h4>
-											<div class="form-group">
-												<input type="text" class="form-style" placeholder="Full Name">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
-												<input type="tel" class="form-style" placeholder="Phone Number">
-												<i class="input-icon uil uil-phone"></i>
-											</div>	
-                      <div class="form-group mt-2">
-												<input type="email" class="form-style" placeholder="Email">
-												<i class="input-icon uil uil-at"></i>
-											</div>
-											<div class="form-group mt-2">
-												<input type="password" class="form-style" placeholder="Password">
-												<i class="input-icon uil uil-lock-alt"></i>
-											</div>
-											<button href="https://www.web-leb.com/code" class="btn mt-4">Sign Up</button>
-				      					</div>
-			      					</div>
-			      				</div>
-			      			</div>
-			      		</div>
-			      	</div>
-		      	</div>
-	      	</div>
-	    </div>
-	</div>
-    <script src="../js/script.js"></script>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signIn-signUp">
+                <form action="" class="sign-in-form">
+                    <h2>Sign In</h2>
+                    <div class="input-field">
+                        <i class="bx bx-user"></i>
+                        <input type="text" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="bx bx-lock-alt"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Log In" class="btn solid">
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="bx bx-user"></i>
+                        <input type="text" placeholder="User Name">
+                    </div>
+                    <div class="input-field">
+                        <i class="bx bx-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="bx bx-lock-alt"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn solid">
+                    <p>Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here ?</h3>
+                    <p>Welcome to our platform! Please enter your username and password to access your account. If you
+                        don"t have an account yet, you can sign up for free.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="../img/login_page/1.png" alt="" class="img">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of Us?</h3>
+                    <p>Welcome to our platform! Please enter your username and password to access your account. If you
+                        don"t have an account yet, you can sign up for free.</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="../img/login_page/2.png" alt="" class="img">
+            </div>
+        </div>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
+	<script> const sign_in = document.querySelector("#sign-in-btn"); const sign_up = document.querySelector("#sign-up-btn"); const container = document.querySelector(".container"); sign_up.addEventListener("click", () => { container.classList.add("sign-up-mode"); }); sign_in.addEventListener("click", () => { container.classList.remove("sign-up-mode"); }); let body = document.querySelector("body"); var darkMode = false; if (window.matchMedia("(prefers-color-scheme: dark)").matches) { darkMode = true; } if (localStorage.getItem("theme") === "dark") { darkMode = true; } else if (localStorage.getItem("theme") === "light") { darkMode = false; } if (darkMode) { body.classList.toggle("dark"); } document.addEventListener("DOMContentLoaded", () => { body.classList.toggle("dark"); localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light"); }); </script>
 </body>
+
 </html>
