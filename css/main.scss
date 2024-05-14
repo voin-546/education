@@ -8,7 +8,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
-    font-family: "DM Sans";
+    font-family: "DM Sans", "Arial";
     outline: none;
 }
 :root {
@@ -157,6 +157,7 @@ header {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            background-color: var(--white);
             @media (max-width: 1100px) {
                 position: absolute;
                 top: 80px;
@@ -182,7 +183,7 @@ header {
                     gap: 0 25px;
                     transition: height .3s;
                     @media (max-width: 1100px) {
-                        gap: 10px 0;
+                        gap: 20px 0;
                         margin-top: 10px;
                     }
                 }
@@ -192,6 +193,7 @@ header {
                             @media (max-width: 1100px) {
                                 display: flex;
                                 justify-content: end;
+                                margin-top: 3px;
                             }
                         }
                     }
@@ -330,7 +332,7 @@ section {
             background-color: var(--white);
             transition: background-color .3s;
             border-radius: 4px;
-            padding: 56px 88px;
+            padding: 56px 80px;
             box-shadow: 0px 11px 35px rgba(0, 0, 0, .08);
             display: flex;
             gap: 155px;
